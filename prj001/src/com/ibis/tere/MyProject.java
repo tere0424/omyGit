@@ -9,7 +9,7 @@ public class MyProject {
         // 税込み価格計算クラスを開始
         TaxCalculator prj = new TaxCalculator();
 
-        boolean ret = prj.init(true, "C:\\omyGit\\prj001\\resouces\\aaa.csv"); // 処理準備
+        boolean ret = prj.init(true, "F:\\work\\omyGit\\prj001\\resouces\\aaa.csv", new Creator()); // 処理準備
 
         // ガード節
         if (!ret) {
