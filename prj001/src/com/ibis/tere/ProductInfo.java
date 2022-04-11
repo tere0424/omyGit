@@ -1,6 +1,6 @@
 package com.ibis.tere;
 
-public class ProductInfo {
+public class ProductInfo implements IProductInfo {
 
     int id; // id
     String name;    // 商品名
@@ -16,6 +16,26 @@ public class ProductInfo {
         // 消費税を求める
         this.taxedPrice = calcTax();
 
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public int getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public int getTaxedPrice() {
+        return this.taxedPrice;
     }
 
     // TODO : private メソッドとは。テレーズ宿題
